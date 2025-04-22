@@ -11,15 +11,15 @@ using WsGatewayWorker.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ 콘솔 로그 설정
+// 콘솔 로그 설정
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
-// ✅ 설정 로드
+// 설정 로드
 SettingsService.LoadFromJsonConfig();
 var currentSettings = SettingsService.Current;
 
-// ✅ DI 등록
+// DI 등록
 builder.Services.AddSingleton(currentSettings);
 builder.Services.AddSingleton<UnitController>(sp =>
 {
