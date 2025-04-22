@@ -1,0 +1,7 @@
+{
+  "master_server": "http://192.168.0.200:5000",
+  "local_server": "http://localhost:8080",
+  "line_number": 1,
+  "device_count_max": 30,
+  "device_type": "PCOS"
+}
