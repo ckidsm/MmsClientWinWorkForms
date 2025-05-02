@@ -61,6 +61,6 @@ app.Map("/ws", wsApp =>
 app.MapControllers();
 
 // 상태 확인용 기본 경로
-app.MapGet("/", () => "✅ WsGatewayWorker 서버 실행 중 (/ws + /api/*)");
+app.MapGet("/", () => "WsGatewayWorker 서버 실행 중 (/ws + /api/*)");
 
 app.Run();
